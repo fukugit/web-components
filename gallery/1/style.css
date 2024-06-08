@@ -1,20 +1,17 @@
 body {
   margin: 0;
-  background-color: rgb(176, 235, 235);
+  background-color: skyblue;
 }
 .container  {
   background-color: orange;
   margin-top: 100px;
   display: flex;
-  /* justify-content: center; */
   flex-direction:column;
   align-items: center;
   width: 100%;
-  height: 600px;
 }
 .gallery {
   width: 50%;
-  height: 500px;
   min-width: 800px;
   max-width: 1000px;
   background-color: greenyellow;
@@ -24,7 +21,7 @@ body {
 }
 
 .top {
-  background-color: rgb(235, 198, 198);
+  background-color: pink;
   display: flex;
   align-items: center;
   flex-direction:column;
@@ -43,19 +40,18 @@ body {
 
 .contents {
   margin-top: 30px;
-  /* background-color: blueviolet; */
+  background-color: blueviolet;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   width: 100%;
-  /* width: 1100px; */
 }
 
 .image1 {
   flex: 1;
   height: 200px;
-  background-color: rgb(169, 105, 10);
+  background-color: brown;
   overflow: hidden;
   cursor: pointer;
   border-radius: 10px;
@@ -67,5 +63,6 @@ body {
 .image1 img{
   max-width: 100%;
   height: auto;
+  min-height: 200px;
   object-fit: cover;
 }

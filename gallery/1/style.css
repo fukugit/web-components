@@ -1,18 +1,30 @@
 body {
   margin: 0;
+  background-color: rgb(176, 235, 235);
 }
 .container  {
-  /* background-color: orange; */
+  background-color: orange;
   margin-top: 100px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
   flex-direction:column;
+  align-items: center;
   width: 100%;
+  height: 600px;
+}
+.gallery {
+  width: 50%;
+  height: 500px;
+  min-width: 800px;
+  max-width: 1000px;
+  background-color: greenyellow;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
 }
 
 .top {
-  /* background-color: red; */
+  background-color: rgb(235, 198, 198);
   display: flex;
   align-items: center;
   flex-direction:column;
@@ -36,7 +48,8 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  width: 1100px;
+  width: 100%;
+  /* width: 1100px; */
 }
 
 .image1 {
@@ -45,6 +58,7 @@ body {
   background-color: rgb(169, 105, 10);
   overflow: hidden;
   cursor: pointer;
+  border-radius: 10px;
 }
 .image1 img:hover{
   transform: scale(1.2);

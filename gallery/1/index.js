@@ -18,8 +18,11 @@ start = ()=> {
   
 debug = ()=> {
   if (debug_flg) {
-    document.getElementById('body')
-    .style.backgroundColor = 'skyblue';
+    const data = document.querySelectorAll('[data-css-layout-debug]')
+    // alert(data[0].dataset.cssLayoutDebug)
+    data[0].style.backgroundColor = data[0].dataset.cssLayoutDebug;
+    // document.getElementById('body')
+    // .style.backgroundColor = 'skyblue';
     document.getElementsByClassName('container')[0]
       .style.backgroundColor= 'orange';
     document.getElementsByClassName('gallery')[0]
@@ -40,3 +43,5 @@ debug = ()=> {
 start();
 let button = document.getElementById('debug');
 button.addEventListener('click', debug);
+
+

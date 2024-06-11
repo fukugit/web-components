@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 .container  {
-  background-color: orange;
+  /* background-color: orange; */
   margin-top: 100px;
   display: flex;
   flex-direction:column;
@@ -13,14 +13,14 @@ body {
   width: 50%;
   min-width: 800px;
   max-width: 1000px;
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
   display: flex;
   flex-direction:column;
   align-items: center;
 }
 
 .top {
-  background-color: pink;
+  /* background-color: pink; */
   display: flex;
   align-items: center;
   flex-direction:column;
@@ -39,7 +39,7 @@ body {
 
 .contents {
   margin-top: 30px;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,7 +50,7 @@ body {
 .image1 {
   flex: 1;
   height: 200px;
-  background-color: brown;
+  /* background-color: brown; */
   overflow: hidden;
   cursor: pointer;
   border-radius: 10px;

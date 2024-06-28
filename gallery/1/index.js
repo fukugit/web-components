@@ -1,10 +1,11 @@
 
 let debug_flg = true;
 
-start = ()=> {
+clear = ()=> {
   const data = document.querySelectorAll('[data-css-layout-debug]')
   data.forEach(element => {
     element.style.backgroundColor = '#FFFFFF';
+    // element.style.border = "0";
   });
 }
   
@@ -13,9 +14,11 @@ debug = ()=> {
     const data = document.querySelectorAll('[data-css-layout-debug]')
     data.forEach(element => {
       element.style.backgroundColor = element.dataset.cssLayoutDebug;
+      // element.style.boxSizing = "border-box";
+      // element.style.border = "solid 1px black";
     });
   } else {
-    start();
+    clear();
   }
   debug_flg = !debug_flg
 
